@@ -1,8 +1,6 @@
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.io.IOException;
 
 import javax.swing.BorderFactory;
@@ -16,13 +14,13 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-	// Ui();
+	Ui();
 
 	Encryptor enc = new Encryptor();
-	enc.cpt();
+	// enc.cpt();
 
 	Decryptor dcpt = new Decryptor();
-	dcpt.decpt();
+	// dcpt.decpt();
 
     }
 
@@ -107,45 +105,21 @@ public class Main {
 	// обработчики кнопок
 
 	// -- смонтировать диск --
-	jb1.addMouseListener(new MouseAdapter() {
-	    public void mouseClicked(MouseEvent event) {
-		RunDisk rd = new RunDisk();
-		rd.mountDisk(new String(jp1.getPassword()), dsk1, dPach1);
-		jp1.setText(null);
-	    }
-	});
+	// test
+	Test test = new Test();
+	test.test(jb1, "хуй 5 см", dPach1, dsk1, jp1);
+	test.test(jb2, "хуй 6 см", dPach2, dsk2, jp2);
+	test.test(jb3, "хуй 7 см", dPach3, dsk3, jp3);
+	test.test(jb4, "хуй 8 см", dPach4, dsk4, jp4);
+	test.test(jb5, "хуй 9 см", dPach5, dsk5, jp5);
 
-	jb2.addMouseListener(new MouseAdapter() {
-	    public void mouseClicked(MouseEvent event) {
-		RunDisk rd = new RunDisk();
-		rd.mountDisk(new String(jp2.getPassword()), dsk2, dPach2);
-		jp2.setText(null);
-	    }
-	});
-
-	jb3.addMouseListener(new MouseAdapter() {
-	    public void mouseClicked(MouseEvent event) {
-		RunDisk rd = new RunDisk();
-		rd.mountDisk(new String(jp3.getPassword()), dsk3, dPach3);
-		jp3.setText(null);
-	    }
-	});
-
-	jb4.addMouseListener(new MouseAdapter() {
-	    public void mouseClicked(MouseEvent event) {
-		RunDisk rd = new RunDisk();
-		rd.mountDisk(new String(jp4.getPassword()), dsk4, dPach4);
-		jp4.setText(null);
-	    }
-	});
-
-	jb5.addMouseListener(new MouseAdapter() {
-	    public void mouseClicked(MouseEvent event) {
-		RunDisk rd = new RunDisk();
-		rd.mountDisk(new String(jp5.getPassword()), dsk5, dPach5);
-		jp5.setText(null);
-	    }
-	});
+	// jb1.addMouseListener(new MouseAdapter() {
+	// public void mouseClicked(MouseEvent event) {
+	// RunDisk rd = new RunDisk();
+	// rd.mountDisk(new String(jp1.getPassword()), dsk1, dPach1);
+	// jp1.setText(null);
+	// }
+	// });
 	// -- конец монтирования --
 
 	// -- размонтирование --

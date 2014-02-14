@@ -29,7 +29,11 @@ public class Decryptor {
 			    "c:\\AutoCrypt\\11.txt"), cipher));
 	    // String secret = (String) ois.readObject();
 
+	    // расшифровываем лист
 	    List<String> secret1 = (List<String>) ois.readObject();
+	    // запускаем с параметрами с листа
+	    RunDisk run = new RunDisk();
+	    run.mountDskCpt(secret1);
 
 	    StringBuilder sb = new StringBuilder();
 	    String[] array = (String[]) secret1.toArray();

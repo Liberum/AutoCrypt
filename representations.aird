@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.obeo.fr/dsl/viewpoint/description/1.1.0" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmlns:viewpoint="http://www.obeo.fr/dsl/viewpoint/1.1.0" xsi:schemaLocation="http://www.obeo.fr/dsl/viewpoint/description/1.1.0 http://www.obeo.fr/dsl/viewpoint/1.1.0#//description" xmi:id="_6LGGII9UEeOOWeuXGKxqzQ" selectedViews="_A1QRAI9VEeOOWeuXGKxqzQ _A2ZggI9VEeOOWeuXGKxqzQ _A2cj0I9VEeOOWeuXGKxqzQ" version="6.5.0.201210011230">
+  <models xmi:type="uml:Model" href="my.uml#_6MZGoI9UEeOOWeuXGKxqzQ"/>
+  <models xmi:type="uml:Model" href="my.uml#_Az_swI9VEeOOWeuXGKxqzQ"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_A1QRAI9VEeOOWeuXGKxqzQ" initialized="true">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='UML%20Structural%20Modeling']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_A2ZggI9VEeOOWeuXGKxqzQ" initialized="true">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='UML%20Behavioral%20Modeling']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_A2cj0I9VEeOOWeuXGKxqzQ" initialized="true">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='UML%20Extensions']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>
